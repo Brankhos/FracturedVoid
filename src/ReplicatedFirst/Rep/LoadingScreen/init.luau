@@ -23,7 +23,7 @@ local BASE_COLOR = Color3.fromRGB(30, 30, 30)
 local ACTIVE_COLOR = Color3.fromRGB(60, 90, 160)
 local BATCH_SIZE = 50
 local UPDATE_SCHEDULED = false
-
+local SKIPABLE = false
 
 
 -- Yardımcı fonksiyonlar
@@ -172,10 +172,12 @@ function LoadingScreen.init()
 		end
 	end)
 
-	self.skipButton.Visible = false
-	self.skipButton.Activated:Connect(function()
-		self.skipped = true
-	end)
+	if SKIPABLE then
+		self.skipButton.Visible = false
+		self.skipButton.Activated:Connect(function()
+			self.skipped = true
+		end)
+	end
 
 	-- Ana klasörleri al ve allAssets'e ekle
 	local mainFolders = game:GetChildren(true)
@@ -298,7 +300,7 @@ function LoadingScreen:updateLoadingProgress(currentProgress: number, folderInde
 		end
 	end
 
-	if not self.skipButton.Visible and game:IsLoaded() and self:necessaryAssetsLoaded() then
+	if SKIPABLE and not self.skipButton.Visible and game:IsLoaded() and self:necessaryAssetsLoaded() then
 		self.skipButton.Visible = true
 	end
 end

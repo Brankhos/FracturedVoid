@@ -75,3 +75,4 @@ https://gamedev.stackexchange.com/questions/81267/how-do-i-generalise-bresenhams
 https://devforum.roblox.com/t/how-to-write-great-code-and-speed-up-everything/2666661
 https://create.roblox.com/docs/tr-tr/performance-optimization
 https://devforum.roblox.com/t/how-would-someone-optimize-their-game-very-very-well/3375256
+https://devforum.roblox.com/t/scriptprofiler-full-release/2025360

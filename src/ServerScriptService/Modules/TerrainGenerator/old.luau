@@ -446,20 +446,24 @@ local function mainLoop(): ()
 		end
 		
 		TerrainGenerator.removeTimeoutChunk()
+		local function checkPlayerHeight()
 
-		for _, player: Player in pairs(Players:GetPlayers()) do
-			if player.Character then
-				local humanoidRootPart = player.Character:FindFirstChild("HumanoidRootPart")
-				if humanoidRootPart and (humanoidRootPart :: BasePart) then
-					local humanoidRootPartTyped = humanoidRootPart :: BasePart
-					local terrainHeight: number = TerrainGenerator.getTerrainHeightAtPosition(humanoidRootPartTyped.Position)
-					
-					if humanoidRootPartTyped.Position.Y < terrainHeight then
-						TerrainGenerator.teleportPlayerToSurface(player)
+			for _, player: Player in pairs(Players:GetPlayers()) do
+				if player.Character then
+					local humanoidRootPart = player.Character:FindFirstChild("HumanoidRootPart")
+					if humanoidRootPart and (humanoidRootPart :: BasePart) then
+						local humanoidRootPartTyped = humanoidRootPart :: BasePart
+						local terrainHeight: number = TerrainGenerator.getTerrainHeightAtPosition(humanoidRootPartTyped.Position)
+						
+						if humanoidRootPartTyped.Position.Y < terrainHeight then
+							TerrainGenerator.teleportPlayerToSurface(player)
+						end
 					end
 				end
 			end
 		end
+
+		checkPlayerHeight()
 		
 		task.wait(1)
 	end
