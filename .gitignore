@@ -36,3 +36,11 @@ profile.svg
 
 # Time trace
 trace.json
+
+# Roblox Studio lock files
+/*.rbxlx.lock
+/*.rbxl.lock
+
+
+# Custom
+.cursor

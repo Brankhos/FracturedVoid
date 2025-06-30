@@ -1,0 +1,77 @@
+genler bir labaratuvar tüpündeki kanla analizör üzerinden yapılacak ve her defasında aynı miktarda parça vermeyecek
+kanın değerine göre süresi uzayabilir veya verdiği miktar düşebilir
+
+oyuncu tamir hızı gibi farklı özelliklerini de güçlendirebilir
+
+ücretli olarak bir "göz" satılabilir ve eğer evde bir sıkıntı var ise oyuncuya bildirim atabilir
+ücretli bir "robot" satılabilir ve otomatik olarak tamir/temizlik gibi kısımları halledebilir
+marketten veya oyunculardan ücretli bir şekilde gen satın alabilir
+bazı genler sınırlı sayıda olur, gazı günlerde yenilenir
+
+belki araştırma özelliği de eklenebilir. Daha hızlı kuluçka kısmını hızlandırabilir
+
+bazı araştırmalarla hangi gen bölümünün neye yaradığının kilidi açılabilir, veya satın alınarak da açılabilir
+bazı labaratuvar aletlerinini pro versiyonu para ile satılabilir
+
+mutasyon olayı da eklensin. Belki fazla kol veya fazla kafa gibi ek olasılıklar
+
+
+
+
+
+FPS dışı zaman bazlı render işlemi
+https://devforum.roblox.com/t/serverclient-cpu-load-measuring/2178083/14
+
+
+Profile begin ile performans testi
+https://devforum.roblox.com/t/server-performance/1702597/4
+
+
+Haridada bir yeri işaretlemek
+https://devforum.roblox.com/t/how-to-account-for-the-gui-inset-when-casting-a-ray-at-the-mouse/1813733/4
+
+Optimizasyonlar
+https://create.roblox.com/docs/tr-tr/performance-optimization/improve
+
+
+Nesne oyuncu otomatik konumlandırma
+https://www.youtube.com/watch?v=XZyHZPidhYU
+
+content streaming
+https://www.youtube.com/watch?v=d8pqcfxqmek
+
+
+
+render ayarları
+https://www.youtube.com/watch?v=PyRe2N5C74Y
+
+
+
+yer yüzü ayarları
+https://devforum.roblox.com/t/texture-reflectance/388986/3
+https://create.roblox.com/docs/tr-tr/parts/terrain
+https://create.roblox.com/docs/tr-tr/parts/materials#custom-materials
+
+
+boktan metaryeller
+https://devforum.roblox.com/t/21-assorted-realistic-seamless-tiling-textures-8-decals/546930
+
+
+Normal map
+https://cpetry.github.io/NormalMap-Online/
+
+
+circle func
+https://devforum.roblox.com/t/generating-block-circles/247876
+
+
+
+bresenham line algorithm
+https://rosettacode.org/wiki/Bitmap/Bresenham%27s_line_algorithm#Lua
+https://gamedev.stackexchange.com/questions/81267/how-do-i-generalise-bresenhams-line-algorithm-to-floating-point-endpoints
+
+
+önemli
+https://devforum.roblox.com/t/how-to-write-great-code-and-speed-up-everything/2666661
+https://create.roblox.com/docs/tr-tr/performance-optimization
+https://devforum.roblox.com/t/how-would-someone-optimize-their-game-very-very-well/3375256
