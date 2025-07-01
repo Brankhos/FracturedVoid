@@ -171,9 +171,9 @@ function LoadingScreen.init()
 			end)
 		end
 	end)
-
+	self.skipButton.Visible = false
+	
 	if SKIPABLE then
-		self.skipButton.Visible = false
 		self.skipButton.Activated:Connect(function()
 			self.skipped = true
 		end)
